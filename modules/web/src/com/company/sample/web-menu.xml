@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="initial-menu"
+          insertBefore="administration">
+        <menu id="airports">
+            <item id="sample$Airport.browse"/>
+            <item id="sample$Airport.browse1"/>
+            <item id="sample$Airport.browse2"/>
+            <item id="sample$Airport.browse3"/>
+        </menu>
+    </menu>
+</menu-config>

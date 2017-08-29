@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd" caption="msg://editCaption"
+        class="com.company.sample.web.airports.terminal.TerminalEdit" datasource="terminalDs" focusComponent="fieldGroup"
+        messagesPack="com.company.sample.web.airports.terminal">
+    <dsContext>
+        <datasource id="terminalDs" class="com.company.sample.entity.airports.Terminal" view="_local"/>
+    </dsContext>
+    <dialogMode height="AUTO" width="400" forceDialog="true"/>
+    <layout expand="windowActions" spacing="true">
+        <fieldGroup id="fieldGroup" datasource="terminalDs">
+            <column width="250px">
+                <field property="name"/>
+            </column>
+        </fieldGroup>
+        <frame id="windowActions" screen="editWindowActions"/>
+    </layout>
+</window>

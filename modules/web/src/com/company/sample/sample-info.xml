@@ -2,6 +2,7 @@
     <default>
         <link caption="Project on GitHub" url="${sample.projectLink}"/>
     </default>
+
     <screen id="sample$Airport.browse">
         <doc caption="Recipe: One-to-Many: One Level of Nesting" page="composition_impl_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
@@ -14,6 +15,7 @@
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
         <descriptor/>
     </screen>
+
     <screen id="sample$Airport.browse1">
         <doc caption="Recipe: One-to-Many: Two Levels of Nesting" page="composition_deep_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
@@ -33,6 +35,56 @@
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
+        <descriptor/>
+    </screen>
+
+    <screen id="sample$Airport.browse2">
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting (1)" page="composition_deep3_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Note.java"/>
+        <descriptor/>
+    </screen>
+    <screen id="sample$Airport.edit2">
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting (1)" page="composition_deep3_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Note.java"/>
+        <descriptor/>
+    </screen>
+    <screen id="sample$Terminal.edit2">
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting" page="composition_deep3_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Note.java"/>
+        <descriptor/>
+    </screen>
+    <screen id="sample$MeetingPoint.edit2">
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting" page="composition_deep3_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Note.java"/>
+        <descriptor/>
+    </screen>
+
+    <screen id="sample$Airport.browse3">
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting (2)" page="composition_deep3_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Note.java"/>
+        <descriptor/>
+    </screen>
+    <screen id="sample$Airport.edit3">
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting (2)" page="composition_deep3_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Note.java"/>
         <descriptor/>
     </screen>
 </sample-info>

@@ -1,11 +1,11 @@
 package com.company.sample.web.airports_2.airport;
 
+import com.company.sample.entity.airports.Airport;
 import com.haulmont.bali.util.ParamsMap;
 import com.haulmont.cuba.core.global.PersistenceHelper;
 import com.haulmont.cuba.gui.components.AbstractEditor;
 import com.haulmont.cuba.gui.components.actions.CreateAction;
 import com.haulmont.cuba.gui.components.actions.EditAction;
-import com.company.sample.entity.airports.Airport;
 
 import javax.inject.Named;
 import java.util.Map;

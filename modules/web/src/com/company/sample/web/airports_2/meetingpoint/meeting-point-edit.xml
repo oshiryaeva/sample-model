@@ -11,7 +11,7 @@
     <layout expand="notesBox" spacing="true">
         <fieldGroup id="fieldGroup" datasource="meetingPointDs">
             <column width="250px">
-                <field id="name"/>
+                <field property="name"/>
             </column>
         </fieldGroup>
         <groupBox id="notesBox" caption="msg://com.company.sample.entity.airports/MeetingPoint.notes" expand="notesTable">

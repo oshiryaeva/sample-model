@@ -7,27 +7,32 @@
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
         <descriptor/>
-        <controller/>
     </screen>
     <screen id="sample$Airport.edit">
         <doc caption="Recipe: One-to-Many: One Level of Nesting" page="composition_impl_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
         <descriptor/>
-        <controller/>
     </screen>
     <screen id="sample$Airport.browse1">
         <doc caption="Recipe: One-to-Many: Two Levels of Nesting" page="composition_deep_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
         <descriptor/>
-        <controller/>
     </screen>
     <screen id="sample$Airport.edit1">
         <doc caption="Recipe: One-to-Many: Two Levels of Nesting" page="composition_deep_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
         <descriptor/>
-        <controller/>
+    </screen>
+    <screen id="sample$Terminal.edit1">
+        <doc caption="Recipe: One-to-Many: Two Levels of Nesting" page="composition_deep_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
+        <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
+        <descriptor/>
     </screen>
 </sample-info>

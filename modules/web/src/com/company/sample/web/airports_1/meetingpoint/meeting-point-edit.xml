@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://editCaption"
         class="com.company.sample.web.airports_1.meetingpoint.MeetingPointEdit"
@@ -11,14 +10,15 @@
                     class="com.company.sample.entity.airports.MeetingPoint"
                     view="_local"/>
     </dsContext>
-    <dialogMode height="600"
-                width="800"/>
+    <dialogMode forceDialog="true"
+                height="AUTO"
+                width="500"/>
     <layout expand="windowActions"
             spacing="true">
         <fieldGroup id="fieldGroup"
                     datasource="meetingPointDs">
             <column width="250px">
-                <field id="name"/>
+                <field property="name"/>
             </column>
         </fieldGroup>
         <frame id="windowActions"

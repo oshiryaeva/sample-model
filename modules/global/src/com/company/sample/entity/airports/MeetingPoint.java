@@ -1,23 +1,13 @@
-/*
- * TODO Copyright
- */
-
 package com.company.sample.entity.airports;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import com.haulmont.cuba.core.entity.StandardEntity;
-import javax.persistence.Column;
-import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.chile.core.annotations.Composition;
+import com.haulmont.chile.core.annotations.NamePattern;
+import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.OnDelete;
 import com.haulmont.cuba.core.global.DeletePolicy;
+
+import javax.persistence.*;
 import java.util.List;
-import javax.persistence.OneToMany;
-import javax.persistence.OrderBy;
 
 @NamePattern("%s|name")
 @Table(name = "SAMPLE_MEETING_POINT")
@@ -32,10 +22,10 @@ public class MeetingPoint extends StandardEntity {
     @Column(name = "NAME")
     protected String name;
 
-    @OrderBy("text")
     @Composition
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "meetingPoint")
+    @OrderBy("text")
     protected List<Note> notes;
 
     public void setNotes(List<Note> notes) {

@@ -39,7 +39,7 @@
     </screen>
 
     <screen id="sample$Airport.browse2">
-        <doc caption="Recipe: One-to-Many: Three Levels of Nesting (1)" page="composition_deep3_recipe.html" style="highlight"/>
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting" page="composition_deep3_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
@@ -47,7 +47,7 @@
         <descriptor/>
     </screen>
     <screen id="sample$Airport.edit2">
-        <doc caption="Recipe: One-to-Many: Three Levels of Nesting (1)" page="composition_deep3_recipe.html" style="highlight"/>
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting" page="composition_deep3_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
@@ -72,7 +72,7 @@
     </screen>
 
     <screen id="sample$Airport.browse3">
-        <doc caption="Recipe: One-to-Many: Three Levels of Nesting (2)" page="composition_deep3_recipe.html" style="highlight"/>
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting" page="composition_deep3_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>
@@ -80,7 +80,7 @@
         <descriptor/>
     </screen>
     <screen id="sample$Airport.edit3">
-        <doc caption="Recipe: One-to-Many: Three Levels of Nesting (2)" page="composition_deep3_recipe.html" style="highlight"/>
+        <doc caption="Recipe: One-to-Many: Three Levels of Nesting" page="composition_deep3_recipe.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Airport.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/Terminal.java"/>
         <file path="modules/global/src/com/company/sample/entity/airports/MeetingPoint.java"/>

@@ -88,6 +88,19 @@
         <descriptor/>
     </screen>
 
+    <screen id="sample$Customer.browse2">
+        <doc caption="Recipe: One-to-One Composition" page="composition_oto_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/CustomerDetails.java"/>
+    </screen>
+    <screen id="sample$Customer.edit2">
+        <doc caption="Recipe: One-to-One Composition" page="composition_oto_recipe.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/CustomerDetails.java"/>
+        <descriptor/>
+        <controller/>
+    </screen>
+
     <screen id="sample$Customer.browse">
         <doc caption="Recipe: Entity Fields Initialization" page="init_values_in_class.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
@@ -122,4 +135,5 @@
         <descriptor/>
         <controller/>
     </screen>
+
 </sample-info>

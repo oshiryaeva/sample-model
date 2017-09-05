@@ -44,15 +44,6 @@ public class Customer extends StandardEntity {
     @JoinColumn(name = "DETAILS_ID")
     protected CustomerDetails details;
 
-    public void setDetails(CustomerDetails details) {
-        this.details = details;
-    }
-
-    public CustomerDetails getDetails() {
-        return details;
-    }
-
-
     @PostConstruct
     protected void init() {
         // Set the 'creator' attribute to a currently logged in user
@@ -90,5 +81,13 @@ public class Customer extends StandardEntity {
 
     public Boolean getActive() {
         return active;
+    }
+
+    public void setDetails(CustomerDetails details) {
+        this.details = details;
+    }
+
+    public CustomerDetails getDetails() {
+        return details;
     }
 }

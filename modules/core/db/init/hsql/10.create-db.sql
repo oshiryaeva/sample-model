@@ -65,3 +65,58 @@ create table SAMPLE_NOTE (
     primary key (ID)
 )^
 -- end SAMPLE_NOTE
+-- begin SAMPLE_CUSTOMER
+create table SAMPLE_CUSTOMER (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    NAME varchar(255),
+    ACTIVE boolean,
+    GRADE integer,
+    CREATOR_ID varchar(36),
+    DETAILS_ID varchar(36),
+    --
+    primary key (ID)
+)^
+-- end SAMPLE_CUSTOMER
+-- begin SAMPLE_CUSTOMER_ADDRESS
+create table SAMPLE_CUSTOMER_ADDRESS (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    CUSTOMER_ID varchar(36),
+    LINE1 varchar(255),
+    LINE2 varchar(255),
+    ZIP varchar(20),
+    --
+    primary key (ID)
+)^
+-- end SAMPLE_CUSTOMER_ADDRESS
+-- begin SAMPLE_CUSTOMER_DETAILS
+create table SAMPLE_CUSTOMER_DETAILS (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    --
+    INFO longvarchar,
+    --
+    primary key (ID)
+)^
+-- end SAMPLE_CUSTOMER_DETAILS

@@ -87,4 +87,39 @@
         <file path="modules/global/src/com/company/sample/entity/airports/Note.java"/>
         <descriptor/>
     </screen>
+
+    <screen id="sample$Customer.browse">
+        <doc caption="Recipe: Entity Fields Initialization" page="init_values_in_class.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
+    </screen>
+
+    <screen id="sample$customersWithAddresses">
+        <doc caption="Recipe: Initialization Using CreateAction" page="init_values_in_CreateAction.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Address.java"/>
+        <descriptor/>
+        <controller/>
+    </screen>
+    <screen id="sample$CustomerAddress.edit">
+        <doc caption="Recipe: Initialization Using CreateAction" page="init_values_in_CreateAction.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Address.java"/>
+        <descriptor/>
+        <controller/>
+    </screen>
+
+    <screen id="sample$Customer.browse1">
+        <doc caption="Recipe: Using initNewItem Method" page="init_values_in_initNewItem.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/CustomerDetails.java"/>
+        <descriptor/>
+        <controller/>
+    </screen>
+    <screen id="sample$Customer.edit1">
+        <doc caption="Recipe: Using initNewItem Method" page="init_values_in_initNewItem.html" style="highlight"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/CustomerDetails.java"/>
+        <descriptor/>
+        <controller/>
+    </screen>
 </sample-info>

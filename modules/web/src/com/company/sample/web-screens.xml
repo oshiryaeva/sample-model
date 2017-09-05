@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
-
     <include file="com/company/sample/screens.xml"/>
-
-    <screen id="sample$Airport.edit" template="com/company/sample/web/airports/airport/airport-edit.xml"/>
-    <screen id="sample$Airport.browse" template="com/company/sample/web/airports/airport/airport-browse.xml"/>
-    <screen id="sample$Terminal.edit" template="com/company/sample/web/airports/terminal/terminal-edit.xml"/>
-    <screen id="sample$Airport.edit1" template="com/company/sample/web/airports_1/airport/airport-edit.xml"/>
-    <screen id="sample$Airport.browse1" template="com/company/sample/web/airports_1/airport/airport-browse.xml"/>
-    <screen id="sample$Terminal.edit1" template="com/company/sample/web/airports_1/terminal/terminal-edit.xml"/>
-    <screen id="sample$MeetingPoint.edit" template="com/company/sample/web/airports_1/meetingpoint/meeting-point-edit.xml"/>
-    <screen id="sample$Airport.edit2" template="/com/company/sample/web/airports_2/airport/airport-edit.xml"/>
-    <screen id="sample$Airport.browse2" template="/com/company/sample/web/airports_2/airport/airport-browse.xml"/>
-    <screen id="sample$Terminal.edit2" template="com/company/sample/web/airports_2/terminal/terminal-edit.xml"/>
-    <screen id="sample$MeetingPoint.edit2" template="com/company/sample/web/airports_2/meetingpoint/meeting-point-edit.xml"/>
-    <screen id="sample$Note.edit" template="com/company/sample/web/airports_2/note/note-edit.xml"/>
-    <screen id="sample$Airport.edit3" template="com/company/sample/web/airports_3/airport/airport-edit.xml"/>
-    <screen id="sample$Airport.browse3" template="com/company/sample/web/airports_3/airport/airport-browse.xml"/>
-
+    <screen id="sample$Airport.edit"
+            template="com/company/sample/web/airports/airport/airport-edit.xml"/>
+    <screen id="sample$Airport.browse"
+            template="com/company/sample/web/airports/airport/airport-browse.xml"/>
+    <screen id="sample$Terminal.edit"
+            template="com/company/sample/web/airports/terminal/terminal-edit.xml"/>
+    <screen id="sample$Airport.edit1"
+            template="com/company/sample/web/airports_1/airport/airport-edit.xml"/>
+    <screen id="sample$Airport.browse1"
+            template="com/company/sample/web/airports_1/airport/airport-browse.xml"/>
+    <screen id="sample$Terminal.edit1"
+            template="com/company/sample/web/airports_1/terminal/terminal-edit.xml"/>
+    <screen id="sample$MeetingPoint.edit"
+            template="com/company/sample/web/airports_1/meetingpoint/meeting-point-edit.xml"/>
+    <screen id="sample$Airport.edit2"
+            template="/com/company/sample/web/airports_2/airport/airport-edit.xml"/>
+    <screen id="sample$Airport.browse2"
+            template="/com/company/sample/web/airports_2/airport/airport-browse.xml"/>
+    <screen id="sample$Terminal.edit2"
+            template="com/company/sample/web/airports_2/terminal/terminal-edit.xml"/>
+    <screen id="sample$MeetingPoint.edit2"
+            template="com/company/sample/web/airports_2/meetingpoint/meeting-point-edit.xml"/>
+    <screen id="sample$Note.edit"
+            template="com/company/sample/web/airports_2/note/note-edit.xml"/>
+    <screen id="sample$Airport.edit3"
+            template="com/company/sample/web/airports_3/airport/airport-edit.xml"/>
+    <screen id="sample$Airport.browse3"
+            template="com/company/sample/web/airports_3/airport/airport-browse.xml"/>
+    <screen id="sample$Customer.browse"
+            template="com/company/sample/web/customer/customer-browse.xml"/>
+    <screen id="sample$Customer.edit"
+            template="com/company/sample/web/customer/customer-edit.xml"/>
+    <screen id="sample$Customer.browse1"
+            template="com/company/sample/web/customers_1/customer-browse.xml"/>
+    <screen id="sample$Customer.edit1"
+            template="com/company/sample/web/customers_1/customer-edit.xml"/>
+    <screen id="sample$CustomerAddress.edit"
+            template="com/company/sample/web/customeraddress/customer-address-edit.xml"/>
+    <screen id="sample$customersWithAddresses"
+            template="com/company/sample/web/customer/customer-address-browse.xml"/>
+    <screen id="sample$CustomerDetails.edit"
+            template="com/company/sample/web/customerdetails/customer-details-edit.xml"/>
 </screen-config>

@@ -30,4 +30,22 @@
         <property name="notes"
                   view="_local"/>
     </view>
+    <view class="com.company.sample.entity.customers.Customer"
+          extends="_local"
+          name="customer-creator-view">
+        <property name="creator"
+                  view="_minimal"/>
+    </view>
+    <view class="com.company.sample.entity.customers.Customer"
+          extends="_local"
+          name="customer-custDetails-view">
+        <property name="details"
+                  view="_local"/>
+    </view>
+    <view class="com.company.sample.entity.customers.CustomerAddress"
+          extends="_local"
+          name="customerAddress-view">
+        <property name="customer"
+                  view="_minimal"/>
+    </view>
 </views>

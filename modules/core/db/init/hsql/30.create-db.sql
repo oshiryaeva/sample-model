@@ -44,3 +44,10 @@ values ('835dfd1a-64a5-d382-4e37-f438b0f48a30', 1, current_timestamp, '4b1ac788-
 
 insert into SAMPLE_TERMINAL (ID, VERSION, CREATE_TS, AIRPORT_ID, NAME)
 values ('4b34ade5-d10d-38fa-c56a-6e42a354acca', 1, current_timestamp, 'eade7c5a-233e-02df-0ab0-d2a2cf0b9a19', 'Terminal E');
+
+
+insert into SAMPLE_CUSTOMER_DETAILS (ID, VERSION, CREATE_TS, INFO)
+values ('0d3787bd-7f18-46d2-a1fc-b09cae63fe75', 1, current_timestamp, 'Some details');
+
+insert into SAMPLE_CUSTOMER (ID, VERSION, CREATE_TS, NAME, ACTIVE, GRADE, CREATOR_ID, DETAILS_ID)
+values ('3ba419e7-c5e6-052f-aa68-ce477c14b68b', 1, current_timestamp, 'Homer Simpson', true, 10, '9b999f7e-face-3904-b36c-f70c060f9937', '0d3787bd-7f18-46d2-a1fc-b09cae63fe75');

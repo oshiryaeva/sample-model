@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.sample.web.customer.CustomerAddressBrowse"
+        focusComponent="customersTable"
+        lookupComponent="customersTable"
+        messagesPack="com.company.sample.web.customer">
+    <dsContext>
+        <groupDatasource id="customersDs"
+                         class="com.company.sample.entity.customers.Customer"
+                         view="_local">
+            <query>
+                <![CDATA[select e from sample$Customer e]]>
+            </query>
+        </groupDatasource>
+        <groupDatasource id="addressesDs"
+                         class="com.company.sample.entity.customers.CustomerAddress"
+                         view="_local">
+            <query>
+                <![CDATA[select e from sample$CustomerAddress e
+where e.customer.id = :ds$customersDs]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout spacing="true">
+        <split height="100%"
+               orientation="horizontal"
+               width="100%">
+            <vbox expand="customersTable"
+                  height="100%"
+                  margin="false,true,false,false"
+                  spacing="true">
+                <label value="Customers"/>
+                <groupTable id="customersTable"
+                            width="100%">
+                    <actions>
+                        <action id="create"/>
+                        <action id="edit"/>
+                        <action id="remove"/>
+                        <action id="refresh"/>
+                    </actions>
+                    <columns>
+                        <column id="name"/>
+                        <column id="active"/>
+                        <column id="grade"/>
+                    </columns>
+                    <rows datasource="customersDs"/>
+                    <rowsCount/>
+                    <buttonsPanel alwaysVisible="true">
+                        <button action="customersTable.create"/>
+                        <button action="customersTable.edit"/>
+                        <button action="customersTable.remove"/>
+                        <button action="customersTable.refresh"/>
+                    </buttonsPanel>
+                </groupTable>
+            </vbox>
+            <vbox expand="addressesTable"
+                  height="100%"
+                  margin="false,false,false,true"
+                  spacing="true">
+                <label value="Addresses"/>
+                <groupTable id="addressesTable"
+                            width="100%">
+                    <actions>
+                        <action id="create"/>
+                        <action id="edit"/>
+                        <action id="remove"/>
+                        <action id="refresh"/>
+                    </actions>
+                    <columns>
+                        <column id="line1"/>
+                        <column id="line2"/>
+                        <column id="zip"/>
+                    </columns>
+                    <rows datasource="addressesDs"/>
+                    <rowsCount/>
+                    <buttonsPanel alwaysVisible="true">
+                        <button action="addressesTable.create"/>
+                        <button action="addressesTable.edit"/>
+                        <button action="addressesTable.remove"/>
+                        <button action="addressesTable.refresh"/>
+                    </buttonsPanel>
+                </groupTable>
+            </vbox>
+        </split>
+    </layout>
+</window>

@@ -8,5 +8,10 @@
             <item id="sample$Airport.browse2"/>
             <item id="sample$Airport.browse3"/>
         </menu>
+        <menu id="initial-values">
+            <item screen="sample$Customer.browse"/>
+            <item screen="sample$customersWithAddresses"/>
+            <item screen="sample$Customer.browse1"/>
+        </menu>
     </menu>
 </menu-config>

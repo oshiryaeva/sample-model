@@ -21,6 +21,14 @@ public class CustomerAddressBrowse extends AbstractLookup {
 
     @Override
     public void init(Map<String, Object> params) {
+        // Before creating address, check if a customer is selected
+        addressesTableCreate.setBeforeActionPerformedHandler(() -> {
+            if (customersDs.getItem() == null) {
+                showNotification("Select a customer");
+                return false;
+            }
+            return true;
+        });
         // Use currently selected customer as initial value for the 'Address.customer' attribute
         addressesTableCreate.setInitialValuesSupplier(
                 () -> ParamsMap.of("customer", customersDs.getItem()));

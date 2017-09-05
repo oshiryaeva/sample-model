@@ -96,14 +96,14 @@
     <screen id="sample$customersWithAddresses">
         <doc caption="Recipe: Initialization Using CreateAction" page="init_values_in_CreateAction.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
-        <file path="modules/global/src/com/company/sample/entity/customers/Address.java"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/CustomerAddress.java"/>
         <descriptor/>
         <controller/>
     </screen>
     <screen id="sample$CustomerAddress.edit">
         <doc caption="Recipe: Initialization Using CreateAction" page="init_values_in_CreateAction.html" style="highlight"/>
         <file path="modules/global/src/com/company/sample/entity/customers/Customer.java"/>
-        <file path="modules/global/src/com/company/sample/entity/customers/Address.java"/>
+        <file path="modules/global/src/com/company/sample/entity/customers/CustomerAddress.java"/>
         <descriptor/>
         <controller/>
     </screen>

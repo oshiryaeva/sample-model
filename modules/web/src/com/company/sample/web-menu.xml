@@ -2,16 +2,17 @@
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
     <menu id="initial-menu"
           insertBefore="administration">
-        <menu id="airports">
-            <item id="sample$Airport.browse"/>
-            <item id="sample$Airport.browse1"/>
-            <item id="sample$Airport.browse2"/>
-            <item id="sample$Airport.browse3"/>
-        </menu>
         <menu id="initial-values">
             <item screen="sample$Customer.browse"/>
             <item screen="sample$customersWithAddresses"/>
             <item screen="sample$Customer.browse1"/>
+        </menu>
+        <menu id="airports">
+            <item screen="sample$Airport.browse"/>
+            <item screen="sample$Airport.browse1"/>
+            <item screen="sample$Airport.browse2"/>
+            <item screen="sample$Airport.browse3"/>
+            <item screen="sample$Customer.browse2"/>
         </menu>
     </menu>
 </menu-config>

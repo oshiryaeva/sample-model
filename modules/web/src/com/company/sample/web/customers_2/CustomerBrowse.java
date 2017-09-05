@@ -1,4 +1,4 @@
-package com.company.sample.web.customers_1;
+package com.company.sample.web.customers_2;
 
 import com.haulmont.cuba.gui.components.AbstractLookup;
 import com.haulmont.cuba.gui.components.actions.CreateAction;
@@ -19,7 +19,7 @@ public class CustomerBrowse extends AbstractLookup {
 
     @Override
     public void init(Map<String, Object> params) {
-        customersTableCreate.setWindowId("sample$Customer.edit1");
-        customersTableEdit.setWindowId("sample$Customer.edit1");
+        customersTableCreate.setWindowId("sample$Customer.edit2");
+        customersTableEdit.setWindowId("sample$Customer.edit2");
     }
 }

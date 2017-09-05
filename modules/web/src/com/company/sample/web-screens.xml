@@ -37,6 +37,10 @@
             template="com/company/sample/web/customers_1/customer-browse.xml"/>
     <screen id="sample$Customer.edit1"
             template="com/company/sample/web/customers_1/customer-edit.xml"/>
+    <screen id="sample$Customer.browse2"
+            template="com/company/sample/web/customers_2/customer-browse.xml"/>
+    <screen id="sample$Customer.edit2"
+            template="com/company/sample/web/customers_2/customer-edit.xml"/>
     <screen id="sample$CustomerAddress.edit"
             template="com/company/sample/web/customeraddress/customer-address-edit.xml"/>
     <screen id="sample$customersWithAddresses"

@@ -40,7 +40,9 @@
           extends="_local"
           name="customer-custDetails-view">
         <property name="details"
-                  view="_local"/>
+                  view="_minimal">
+            <property name="info"/>
+        </property>
     </view>
     <view class="com.company.sample.entity.customers.CustomerAddress"
           extends="_local"

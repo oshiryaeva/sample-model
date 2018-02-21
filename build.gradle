@@ -1,15 +1,16 @@
 
 buildscript {
-    ext.cubaVersion = '6.8-SNAPSHOT'
+    ext.cubaVersion = '6.8.1'
     repositories {
         mavenLocal()
         maven {
-            url 'https://repo.cuba-platform.com/content/groups/work'
-            credentials {
-                username(rootProject.hasProperty('repoUser') ? rootProject['repoUser'] : 'cuba')
-                password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : 'cuba123')
-            }
+            url 'https://dl.bintray.com/cuba-platform/main'
             
+        }
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'http://maven.vaadin.com/vaadin-addons'
         }
     }
     dependencies {
@@ -32,8 +33,8 @@ apply(plugin: 'cuba')
 cuba {
     artifact {
         group = 'com.company.sample'
-        version = '0.1'
-        isSnapshot = true
+        version = "0.2"
+        isSnapshot = false
     }
     tomcat {
         dir = "$project.rootDir/deploy/tomcat"
@@ -243,6 +244,7 @@ task wrapper(type: Wrapper) {
 apply from: 'extra.gradle'
 
 task buildUberJar(type: CubaUberJarBuilding) {
+    appProperties = [:]
     singleJar = true
     coreJettyEnvPath = 'modules/core/web/META-INF/jetty-env.xml'
     logbackConfigurationFile = 'etc/logback.xml'
